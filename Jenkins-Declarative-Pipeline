@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage("cloning code from github"){
+            steps{
+                git credentialsId: 'jenkins_Credentials', url: 'https://github.com/BABYDAMINENI/simple-app.git'
+            }
+        }
+    }
+}
