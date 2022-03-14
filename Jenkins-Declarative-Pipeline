@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        PATH="/opt/maven/BIN:$PATH"
+        PATH="/opt/maven/bin:$PATH"
     }
     stages{
         stage("cloning code from github"){
