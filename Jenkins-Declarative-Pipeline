@@ -8,7 +8,7 @@ pipeline{
         }
         stage("Build Using Maven"){
             steps{
-                sh 'Maven-3.8.4 clean install'
+                sh 'mvn clean install'
             }
         
         }
