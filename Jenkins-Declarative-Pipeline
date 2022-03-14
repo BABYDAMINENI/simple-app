@@ -6,5 +6,11 @@ pipeline{
                 git credentialsId: 'jenkins_Credentials', url: 'https://github.com/BABYDAMINENI/simple-app.git'
             }
         }
+        stage("Build Using Maven"){
+            steps{
+                sh 'Maven-3.8.4 clean install'
+            }
+        
+        }
     }
 }
